@@ -39,15 +39,15 @@ const Button: React.FC<Props> = ({
 
     switch (startIcon) {
       case 'cart':
-        return(<img src={cart}/>)
+        return(<img alt='icon' src={cart}/>)
       case 'cached':
-        return(<img src={cached}/>) 
+        return(<img alt='icon' src={cached}/>) 
       case 'account' :
-        return(<img src={account}/>)
+        return(<img alt='icon' src={account}/>)
       case 'code':
-        return(<img src={code}/>)
+        return(<img alt='icon' src={code}/>)
       case 'contactless' :
-        return(<img src={contactless}/>)
+        return(<img alt='icon' src={contactless}/>)
       default:
         break;
     }
@@ -58,15 +58,15 @@ const Button: React.FC<Props> = ({
 
     switch (endIcon) {
       case 'cart':
-        return(<img className='endIcon' src={cart}/>)
+        return(<img className='endIcon' alt='icon' src={cart}/>)
       case 'cached':
-        return(<img className='endIcon' src={cached}/>) 
+        return(<img className='endIcon' alt='icon' src={cached}/>) 
       case 'account' :
-        return(<img className='endIcon' src={account}/>)
+        return(<img className='endIcon' alt='icon' src={account}/>)
       case 'code':
-        return(<img className='endIcon' src={code}/>)
+        return(<img className='endIcon' alt='icon' src={code}/>)
       case 'contactless' :
-        return(<img className='endIcon' src={contactless}/>)
+        return(<img className='endIcon' alt='icon' src={contactless}/>)
       default:
         break;
     }
