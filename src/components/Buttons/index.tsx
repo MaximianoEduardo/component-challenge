@@ -1,6 +1,5 @@
 import React from 'react';
-import { Primary, Outline, Text } from '../../stories/Button/Button.stories';
-
+import Button from '../../stories/Button/index'
 import { Container, Title, ButtonWrapper, Row } from './styles';
 
 const Buttons: React.FC = () => {
@@ -17,13 +16,13 @@ const Buttons: React.FC = () => {
             <label>
               button
             </label>
-            <Primary />
+            <Button />
           </div>
           <div className="rowWrapper">
             <label>
               button
             </label>
-            <Primary />
+            <Button />
           </div>
         </Row>
 
@@ -32,13 +31,13 @@ const Buttons: React.FC = () => {
             <label>
               button
             </label>
-            <Outline />
+            <Button />
           </div>
           <div className="rowWrapper">
             <label>
               button
             </label>
-            <Outline />
+            <Button />
           </div>
         </Row>
 
@@ -47,16 +46,126 @@ const Buttons: React.FC = () => {
             <label>
               button
             </label>
-            <Text />
+            <Button />
           </div>
           <div className="rowWrapper">
             <label>
               button
             </label>
-            <Text />
+            <Button />
           </div>
         </Row>
 
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              button
+            </label>
+            <Button variant='outline'/>
+          </div>
+          <div className="rowWrapper">
+            <label>
+              button
+            </label>
+            <Button variant='outline' />
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              button
+            </label>
+            <Button variant='outline'/>
+          </div>
+          <div className="rowWrapper">
+            <label>
+              button
+            </label>
+            <Button variant='outline' />
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              Disable Shadow
+            </label>
+            <Button disableShadow/>
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              button
+            </label>
+            <Button variant='text' disable/>
+          </div>
+          <div className="rowWrapper">
+            <label>
+              Disable
+            </label>
+            <Button disable />
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              Icons
+            </label>
+            <Button color='primary' startIcon='none' />
+          </div>
+          <div className="rowWrapper">
+            <label>
+              Disable
+            </label>
+            <Button color='primary' endIcon='none' />
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              Size
+            </label>
+            <Button color='primary' size='sm' />
+          </div>
+          <div className="rowWrapper">
+            <label>
+            Size
+            </label>
+            <Button color='primary' size='md' />
+          </div>
+          <div className="rowWrapper">
+            <label>
+            Size
+            </label>
+            <Button color='primary' size='lg' />
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              Colors
+            </label>
+            <Button color='default' />
+          </div>
+          <div className="rowWrapper">
+            <label>
+            Size
+            </label>
+            <Button color='primary' />
+          </div>
+          <div className="rowWrapper">
+            <label>
+            Size
+            </label>
+            <Button color='danger' />
+          </div>
+        </Row>
 
       </ButtonWrapper>
 

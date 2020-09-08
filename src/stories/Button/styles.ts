@@ -1,9 +1,5 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-
-`;
-
 export const ButtonStyled = styled.button`
  border-radius: 6px;
   border: none;
@@ -15,7 +11,7 @@ export const ButtonStyled = styled.button`
   justify-content: center;
   cursor:pointer;
   padding: 8px 16px;
-  &.button--outline{
+  &.outline{
     background: #fff;
     border: 1px solid #3D5AFE;
     color: #3D5AFE;
@@ -24,7 +20,7 @@ export const ButtonStyled = styled.button`
       background: rgba(41, 98, 255, 0.1);
     }
   }
-  &.button--text{
+  &.text{
     background: #fff;
     border:  none;
     color: #3D5AFE;
@@ -33,23 +29,23 @@ export const ButtonStyled = styled.button`
       background: rgba(41, 98, 255, 0.1);
     }
   }
-  &.button--sd{
+  &.sd{
     width: 73px;
   }
-  &.button--md{
+  &.md{
     width: 81px;
   }
-  &.button--lg{
+  &.lg{
     width: 93px;
   }
-  &.button-default{
+  &.default{
     background: #E0E0E0;
     &:hover,
     &:focus{
       background: #AEAEAE;
     }
   }
-  &.button-primary{
+  &.primary{
     background: #2962FF;
     color: #fff;
     &:hover,
@@ -58,7 +54,7 @@ export const ButtonStyled = styled.button`
       box-shadow: 0px 2px 3px rgba(41, 98, 255, 0.2);
     }
   }
-  &.button-Secondary{
+  &.secondary{
     background: #455A64;
     color: #fff;
     &:hover,
@@ -67,7 +63,10 @@ export const ButtonStyled = styled.button`
       box-shadow: 0px 2px 3px rgba(69, 90, 100, 0.2);
     }
   }
-  &.button-Danger{
+  &.disable{
+    cursor: unset;
+  }
+  &.danger{
     background: #D32F2F;
     color: #fff;
     &:hover,
@@ -76,7 +75,7 @@ export const ButtonStyled = styled.button`
       box-shadow: 0px 2px 3px rgba(211, 47, 47, 0.2);
     }
   }
-  &.button--shadowOff{
+  &.disableShadow{
     box-shadow: unset;
     }
    > img{
@@ -88,5 +87,4 @@ export const ButtonStyled = styled.button`
       margin-left: 5px;
       margin-right: unset;
     }
-  }
 `;
