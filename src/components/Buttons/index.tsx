@@ -14,161 +14,157 @@ const Buttons: React.FC = () => {
         <Row>
           <div className="rowWrapper">
             <label>
-              button
+                { ' <Button />  '}
             </label>
-            <Button />
+            <Button color='default'  />
           </div>
-          <div className="rowWrapper">
+          <div className="rowWrapper hv">
             <label>
-              button
+            { ' &:hover, &:focus  '}
             </label>
-            <Button />
-          </div>
-        </Row>
-
-        <Row>
-          <div className="rowWrapper">
-            <label>
-              button
-            </label>
-            <Button />
-          </div>
-          <div className="rowWrapper">
-            <label>
-              button
-            </label>
-            <Button />
+            <Button color='default' />
           </div>
         </Row>
 
         <Row>
           <div className="rowWrapper">
             <label>
-              button
+            { ' <Button variant="outline" />  '}
             </label>
-            <Button />
+            <Button variant='outline' disableShadow />
           </div>
-          <div className="rowWrapper">
+          <div className="rowWrapper hv">
             <label>
-              button
+            { ' &:hover, &:focus  '}
             </label>
-            <Button />
-          </div>
-        </Row>
-
-        <Row>
-          <div className="rowWrapper">
-            <label>
-              button
-            </label>
-            <Button variant='outline'/>
-          </div>
-          <div className="rowWrapper">
-            <label>
-              button
-            </label>
-            <Button variant='outline' />
+            <Button  variant='outline' disableShadow/>
           </div>
         </Row>
 
         <Row>
           <div className="rowWrapper">
             <label>
-              button
+            { ' <Button variant="text" />  '}
             </label>
-            <Button variant='outline'/>
+            <Button variant='text'  disableShadow />
           </div>
-          <div className="rowWrapper">
+          <div className="rowWrapper hv">
             <label>
-              button
+            { ' &:hover, &:focus  '}
             </label>
-            <Button variant='outline' />
-          </div>
-        </Row>
-
-        <Row>
-          <div className="rowWrapper">
-            <label>
-              Disable Shadow
-            </label>
-            <Button disableShadow/>
+            <Button variant='text'  disableShadow />
           </div>
         </Row>
 
         <Row>
           <div className="rowWrapper">
             <label>
-              button
+            { ' <Button disableShadow" />  '}
             </label>
-            <Button variant='text' disable/>
-          </div>
-          <div className="rowWrapper">
-            <label>
-              Disable
-            </label>
-            <Button disable />
+            <Button disableShadow color='primary'/>
           </div>
         </Row>
 
         <Row>
           <div className="rowWrapper">
             <label>
-              Icons
+            { ' <Button disable" />  '}
             </label>
-            <Button color='primary' startIcon='none' />
+            <Button variant='default'  disable disableShadow/>
           </div>
-          <div className="rowWrapper">
+          <div className="rowWrapper hv">
             <label>
-              Disable
+              {' <Button variant=”text” disabled /> '}
             </label>
-            <Button color='primary' endIcon='none' />
-          </div>
-        </Row>
-
-        <Row>
-          <div className="rowWrapper">
-            <label>
-              Size
-            </label>
-            <Button color='primary' size='sm' />
-          </div>
-          <div className="rowWrapper">
-            <label>
-            Size
-            </label>
-            <Button color='primary' size='md' />
-          </div>
-          <div className="rowWrapper">
-            <label>
-            Size
-            </label>
-            <Button color='primary' size='lg' />
+            <Button variant='text' disableShadow disable />
           </div>
         </Row>
 
         <Row>
           <div className="rowWrapper">
             <label>
-              Colors
+              {' <Button startIcon=”local_grocery_store” />  '}
+            </label>
+            <Button color='primary' startIcon='account_circle' />
+          </div>
+          <div className="rowWrapper">
+            <label>
+              {' <Button endIcon=”local_grocery_store” />  '}
+            </label>
+            <Button color='primary' endIcon='account_circle' />
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              {'<Button size=”sm” />'}
+            </label>
+            <Button color='primary' size='sm'/>
+          </div>
+          <div className="rowWrapper">
+            <label>
+              {'<Button size="md" />'}
+            </label>
+            <Button color='primary' size='md'/>
+          </div>
+          <div className="rowWrapper">
+            <label>
+              {'<Button size="lg" />'}
+            </label>
+            <Button color='primary' size='lg'/>
+          </div>
+        </Row>
+
+        <Row>
+          <div className="rowWrapper">
+            <label>
+              {'<Button color=”default” />'}
             </label>
             <Button color='default' />
           </div>
           <div className="rowWrapper">
             <label>
-            Size
+              {'<Button color="primary" />'}
             </label>
             <Button color='primary' />
           </div>
           <div className="rowWrapper">
             <label>
-            Size
+              {'<Button color="secondary" />'}
+            </label>
+            <Button color='secondary' />
+          </div>
+          <div className="rowWrapper">
+            <label>
+              {'<Button color="danger" />'}
             </label>
             <Button color='danger' />
           </div>
         </Row>
 
-      </ButtonWrapper>
+        <Row>
+          <div className="rowWrapper hv">
+            <label>
+              {'&:hover, &:focus '}
+            </label>
+            <Button color='default' />
+          </div>
+          <div className="rowWrapper hv">
+            <Button color='primary' />
+          </div>
+          <div className="rowWrapper hv">
+            <Button color='secondary' />
+          </div>
+          <div className="rowWrapper hv">
+            <Button color='danger' />
+          </div>
+        </Row>
 
+      </ButtonWrapper>
+      <span>
+        Eduardo Maximiano @ DevChallenges.io 
+      </span>
     </Container>
   );
 };
