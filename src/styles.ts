@@ -10,11 +10,12 @@ export default createGlobalStyle`
     html, body, #root {
         max-height: 100vh;
         max-width: 100vw;
+        overflow-x: hidden;
     }
     *, button, input{
         border: 0;
         background: none;
-        font-family:  Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+        font-family: 'Poppins';
     }
     html {
         background: var(--primary)

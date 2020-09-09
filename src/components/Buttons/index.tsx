@@ -150,13 +150,13 @@ const Buttons: React.FC = () => {
             </label>
             <Button color='default' />
           </div>
-          <div className="rowWrapper hv">
+          <div className="rowWrapper hv mg">
             <Button color='primary' />
           </div>
-          <div className="rowWrapper hv">
+          <div className="rowWrapper hv mg">
             <Button color='secondary' />
           </div>
-          <div className="rowWrapper hv">
+          <div className="rowWrapper hv mg">
             <Button color='danger' />
           </div>
         </Row>

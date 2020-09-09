@@ -19,7 +19,7 @@ export const Title = styled.h1`
   color: var(--header);
   font-size: 24px;
   font-family: 'Poppins';
-  font-weight: 500;
+  font-weight: 600;
 `
 
 export const ButtonWrapper = styled.div`
@@ -39,16 +39,14 @@ export const  Row = styled.div`
     min-width: 300px;
     label{
       color: #333333;
-      font-family: Ubuntu Mono;
+      font-family: 'Ubuntu Mono';
       font-size: 12px;
     }
     button{
       margin-top: 12px;
     }
     &.hv{
-      &:nth-child(2),
-      &:nth-child(3),
-      &:nth-child(4)
+      &.mg
       {
         margin-top: 20px;
       }

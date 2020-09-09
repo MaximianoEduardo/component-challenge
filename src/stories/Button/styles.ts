@@ -9,6 +9,7 @@ export const ButtonStyled = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Noto Sans JP';
   cursor:pointer;
   padding: 8px 16px;
   color: #3F3F3F;
