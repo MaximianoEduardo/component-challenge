@@ -5,9 +5,13 @@ import { Container, Title, RoutesComponents, TitleComponent } from './styles';
 const Sidebar: React.FC = () => {
   return (
     <Container>
-      <Title>
-        <span>Dev</span>challenges.io
-      </Title>
+      
+        <a href="https://devchallenges.io/" target='_blank'>
+          <Title>
+            <span>Dev</span>challenges.io
+          </Title>
+        </a>
+     
 
       <RoutesComponents>
         <TitleComponent className='active'>
