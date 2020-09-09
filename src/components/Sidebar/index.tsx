@@ -6,7 +6,7 @@ const Sidebar: React.FC = () => {
   return (
     <Container>
       
-        <a href="https://devchallenges.io/" target='_blank'>
+        <a href="https://devchallenges.io/" target='_blank' rel='noopener noreferrer'>
           <Title>
             <span>Dev</span>challenges.io
           </Title>
