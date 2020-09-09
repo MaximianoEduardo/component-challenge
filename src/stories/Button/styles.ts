@@ -11,6 +11,7 @@ export const ButtonStyled = styled.button`
   justify-content: center;
   cursor:pointer;
   padding: 8px 16px;
+  color: #3F3F3F;
   &.outline{
     background: #fff;
     border: 1px solid #3D5AFE;
@@ -29,7 +30,7 @@ export const ButtonStyled = styled.button`
       background: rgba(41, 98, 255, 0.1);
     }
   }
-  &.sd{
+  &.sm{
     width: 73px;
   }
   &.md{
@@ -65,6 +66,7 @@ export const ButtonStyled = styled.button`
   }
   &.disable{
     cursor: unset;
+    color: #9E9E9E;
   }
   &.danger{
     background: #D32F2F;
@@ -78,13 +80,14 @@ export const ButtonStyled = styled.button`
   &.disableShadow{
     box-shadow: unset;
     }
-   > img{
-    width: 13.2px;
-    height: 14px;
-    display: flex;
-    margin-right: 5px;
+    &.startIcon{
+       > i{
+      margin-right: 5px;
+      }
+    }
     &.endIcon{
-      margin-left: 5px;
-      margin-right: unset;
+      >i{
+         margin-left: 5px;
+      }
     }
 `;

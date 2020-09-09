@@ -1,5 +1,5 @@
 import React from 'react'
-
+import MaterialIcon from 'material-icons-react'
 import {ButtonStyled} from './styles'
 
 export interface Props {
@@ -35,13 +35,11 @@ const Button: React.FC<Props> = ({
         {...rest}
       >
         {rest.startIcon && (
-          <>
-          </>
+          <MaterialIcon icon={rest.startIcon} color='#fff' size='18' />
         )}
         {children}
         {rest.endIcon && (
-          <>
-          </>
+          <MaterialIcon icon={rest.endIcon} color='#fff' size='18' />
         )}
       </ButtonStyled>
     );
