@@ -46,6 +46,12 @@ export const  Row = styled.div`
       margin-top: 12px;
     }
     &.hv{
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4)
+      {
+        margin-top: 20px;
+      }
       >.default{
         background: #AEAEAE;
       }
