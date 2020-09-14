@@ -16,7 +16,6 @@ const Layout: React.FC = () => {
       <Router>
         <Sidebar />
           <Switch>
-           <Redirect exact from="/" to="/home" />
             <Route exact path="/">
               <Home />
             </Route>
