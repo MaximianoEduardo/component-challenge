@@ -28,6 +28,35 @@ export const RoutesComponents = styled.div`
   align-items: flex-start;
   padding: 122px 0 ;
   width: 120px;
+  > a{
+      text-decoration:none;
+      font-family: Noto Sans JP;
+      font-weight: 500;
+      font-size: 14px;
+      color: var( --gray);
+      transition: 300ms ease-out;
+      padding: 5px;
+      border-radius: 10px;
+      & + h2 {
+        margin-top: 20px
+      }
+      &:hover{
+          h2{
+            color: #fff;
+            background: #323834;
+          }
+        }
+    &.selected{
+      h2{
+        color: var(--active);
+       &:hover{
+          color: #fff;
+          background: #323834;
+        }
+      }
+    }
+    
+  }
 `
 
 export const TitleComponent = styled.h2`
@@ -40,12 +69,5 @@ export const TitleComponent = styled.h2`
   border-radius: 10px;
   & + h2 {
     margin-top: 20px
-  }
-  &.active{
-    color: var(--active);
-  }
-  :hover{
-    color: #fff;
-    background: #323834;
   }
 `
